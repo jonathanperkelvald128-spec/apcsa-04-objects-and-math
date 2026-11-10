@@ -12,34 +12,46 @@ Use the official docs, not a search engine summary:
 ## 2. Four methods (return type and parameter list, exactly as the docs show)
 | Method | Return type | Parameter list |
 |---|---|---|
-| `length` | | |
-| `isEmpty` | | |
-| `indexOf` (pick one version) | | |
-| `charAt` | | |
+Here’s #2 filled in exactly like the Java docs:
+
+| Method | Return type | Parameter list |
+|---|---|---|
+| `length` | `int` |input string |
+| `isEmpty` | `boolean` | input string |
+| `indexOf` (pick one version) | |  |
+| `charAt` | `char` | ` |
+
+If you want, I can also fill out #3 and #4 the same way.
 
 ## 3. A method with two or more signatures
-Method name:
+Method name: contains("a" , "A")
 
 Copy two of its signatures:
 
-How do they differ?
+How do they differ? The first "a" is the string being replaced and the second is what it is being replaced with 
 
 ## 4. The Math class
 Write the signature of each. Then say how many versions of `abs` there are.
 
-- `abs`:
-- `pow`:
-- `max`:
-- Number of `abs` versions:
+- `abs`: input is number, int, double, float, long
+- `pow`: input is 2 number, one is the base and the other number is the exponent
+- `max`: input is 2 numbers
+- Number of `abs` versions: 6
 
 ## 5. One String method we have not used
-Method name:
+Method name: isBlank()
+Returns true if the string is empty or contains only whute space codepoints, otherwise false.
 
 Your code:
 ```java
-// paste your code
-```
+String word = " ";
+String word2 = "apple";
+
+System.out.println(word.isBlank());
+System.out.println(word2.isBlank());
+
 Output:
 ```
-// paste your output
-```
+
+True
+False
